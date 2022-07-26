@@ -207,7 +207,7 @@ const TinderCard = React.forwardRef(
           transform: [
             { translateX: x },
             { translateY: y },
-            { rotate: rot.interpolate((rot) => `${rot}deg`) }
+            { rotate: rot.to((rot) => `${rot}deg`) }
           ]
         }}
         className={className}
